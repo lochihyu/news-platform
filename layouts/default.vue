@@ -2,16 +2,7 @@
   <q-layout view="lHh lpR fff">
     <q-header elevated class="bg-white text-black" height-hint="64">
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-
-        <router-link to="/">
-          <q-img
-            class="q-mx-md"
-            src="/assets/logo.png"
-            style="width: 128px; max-height: 64px"
-            fit="contain"
-          />
-        </router-link>
+        <router-link to="/"> </router-link>
         <q-tabs
           align="left"
           active-color="red-8"
