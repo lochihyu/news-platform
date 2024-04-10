@@ -1,0 +1,103 @@
+@import 'headline.scss';
+
+body {
+	background: radial-gradient(ellipse at top, rgba(126,159,191,1) 0%, rgba(156,136,114,0.3) 33%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,1) 100%);
+	background-attachment: fixed;
+}
+
+.table-title {
+	background: rgba(0,0,0,0.05);
+}
+
+.carousel {
+  background: transparent;
+  user-select: none;
+}
+
+.carousel-info {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0) 80%);
+}
+
+.image-mask {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 68%, rgba(0, 0, 0, 0) 98%);
+}
+
+.carousel-label {
+	min-width: 100px;
+	background: linear-gradient(90deg, rgba(0,74,76,0.9) 40%, rgba(255,160,0,0.3) 80%, rgba(255,0,0,0.05) 95%, rgba(0,0,0,0) 100%);
+	border-left: 6px solid #00acc1;
+	text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
+}
+
+.anchor-style {
+	text-decoration: none !important;
+	cursor: default !important;
+}
+
+.rounded-img {
+	border-radius: 20px;
+}
+
+.group-section {
+	background: linear-gradient(270deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+}
+
+.featured-card {
+	border-radius: 0px 28px 28px 0px;
+}
+
+.featured-card-label {
+	border-left: 4px solid #00acc1;
+	background: linear-gradient(90deg, rgba(0,172,193,0.3) 0%, rgba(255,160,0,0.1) 30%, rgba(255,0,0,0) 100%);
+}
+
+@supports (background-clip: text) {
+
+	.banner-title {
+		position: relative;
+		line-height: 150%;
+	}
+
+	.banner-title.text-h3 .banner-title-text {
+		background-image: repeating-linear-gradient(
+			rgb(255,255,255),
+			rgb(255,255,255) 1rem,
+			rgb(150,150,150) 3rem,
+			rgb(160,160,160) 3.2rem,
+			rgb(192,192,192) 4.6rem);
+	}
+
+	.banner-title.text-h4 .banner-title-text {
+		background-image: repeating-linear-gradient(
+			rgb(255,255,255),
+			rgb(255,255,255) 1rem,
+			rgb(150,150,150) 2rem,
+			rgb(160,160,160) 2.8rem,
+			rgb(192,192,192) 3.1rem);
+	}
+
+	.banner-title.text-h5 .banner-title-text {
+		background-image: repeating-linear-gradient(
+			rgb(255,255,255),
+			rgb(255,255,255) 0.7rem,
+			rgb(150,150,150) 1.4rem,
+			rgb(160,160,160) 2rem,
+			rgb(192,192,192) 2.5rem);
+	}
+
+	.banner-title .banner-title-text {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+
+	.banner-title .banner-title-shadow {
+		position: relative;
+		top: 1px;
+		text-shadow: 0px 3px 4px rgba(0, 0, 0, 1), 0px -1px 2px rgba(0, 0, 0, 1);
+		color: black;
+	}
+}

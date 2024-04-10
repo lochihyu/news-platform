@@ -1,0 +1,35 @@
+.slide {
+  /*
+	background: linear-gradient(180deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.5) 100%);
+	*/
+}
+
+.slide-detail {
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.slide-text {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.slide-label {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 74, 76, 0.9) 0%,
+    rgba(255, 160, 0, 0.3) 60%,
+    rgba(255, 0, 0, 0.05) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-left: 3px solid #00acc1;
+}
+
+.slide-image {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ) !important;
+}

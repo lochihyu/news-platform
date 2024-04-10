@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-balloon-block": "^41.2.1",
+    "@ckeditor/ckeditor5-vue": "^5.1.0",
+    "@quasar/extras": "^1.16.9",
+    "html-to-text": "^9.0.5",
+    "nuxt": "^3.10.3",
+    "quasar": "^2.15.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "dayjs-nuxt": "^2.1.9",
+    "nuxt-quasar-ui": "^2.0.7",
+    "nuxt-schema-org": "^3.3.6",
+    "sass": "^1.72.0",
+    "vue-dompurify-html": "^5.0.1"
+  }
+}
