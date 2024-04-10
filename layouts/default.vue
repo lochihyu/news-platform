@@ -75,31 +75,27 @@
           <div class="q-gutter-sm">
             <q-btn unelevated round
                    icon="mdi-facebook"
-                   href="https://www.facebook.com/sunmedia.tw"
+                   href=""
                    />
             <q-btn unelevated round
                    icon="mdi-instagram"
-                   href="https://www.instagram.com/sun__media"
+                   href=""
                    />
             <q-btn unelevated round
                    icon="mdi-twitter"
-                   href="https://twitter.com/sunmedia1010"
+                   href=""
                    />
             <q-btn unelevated round
                    icon="mdi-youtube"
-                   href="https://www.youtube.com/channel/UCDSLqNbm7e0hSjLQ6jCwtsg"
+                   href=""
                    />
           </div>
           <q-separator dark spaced />
-          <div class="text-h6">商傳媒 SUN MEDIA</div>
-          <div>總社地址：330 桃園市桃園區中正路1092號25樓</div>
-          <div>總機：03-2209026</div>
-          <div>客服信箱：sunmedia1010@gmail.com</div>
+         
         </q-card-section>
 
         <q-card-section>
-          <div>&copy; SUN MEDIA CREATIVE LIMITED. ALL RIGHTS RESERVED.</div>
-          <div>版權所有 商傳媒國際有限公司</div>
+      
         </q-card-section>
       </q-card>
     </q-footer>
