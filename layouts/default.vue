@@ -9,13 +9,13 @@
           indicator-color="red-8"
           class="gt-sm"
         >
-          <q-route-tab
+          <!-- <q-route-tab
             v-for="group in groups"
             :key="group.id"
             :to="'/' + group.path"
             :label="group.name"
             exact
-          />
+          /> -->
         </q-tabs>
 
         <q-space />
@@ -57,7 +57,7 @@
       elevated
     >
       <q-list>
-        <q-item
+        <!-- <q-item
           v-for="group in groups"
           :key="group.id"
           :to="'/' + group.path"
@@ -76,7 +76,7 @@
           <q-item-section>
             <q-item-label>{{ group.name }}</q-item-label>
           </q-item-section>
-        </q-item>
+        </q-item> -->
       </q-list>
     </q-drawer>
 
@@ -109,25 +109,25 @@ const router = useRouter();
 const leftDrawerOpen = ref(false);
 const keywords = ref("");
 const searchInput = ref(null);
-const groups = await loadGroups();
+// const groups = await loadGroups();
 
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 
-async function loadGroups() {
-  // Loading groups for menu item
-  const { data, error } = await useAsyncData(() =>
-    $fetch(config.public.apiBaseUrl + "/apis/v1/groups")
-  );
+// async function loadGroups() {
+//   // Loading groups for menu item
+//   const { data, error } = await useAsyncData(() =>
+//     $fetch(config.public.apiBaseUrl + "/apis/v1/groups")
+//   );
 
-  let groups = [{ id: 0, name: "即時快訊", path: "" }];
+//   let groups = [{ id: 0, name: "即時快訊", path: "" }];
 
-  groups.push(...data.value.groups);
-  groups.push({ id: 999, name: "合作媒體", path: "collaborative" });
+//   groups.push(...data.value.groups);
+//   groups.push({ id: 999, name: "合作媒體", path: "collaborative" });
 
-  return groups;
-}
+//   return groups;
+// }
 
 function onSearch() {
   searchInput.value.blur();
